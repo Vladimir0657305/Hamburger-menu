@@ -33,14 +33,17 @@ nav ul {
 nav ul li {
     display: inline-block;
 }
-nav ul li a {
+nav ul li .alink {
     display: inline-block;
     color: black;
     text-decoration: none;
     padding: .5em 1em;
 }
-nav ul li a:hover {
+nav ul li .alink:hover {
     background: #e1e1e1;
+}
+.n1 {
+    margin: 0 0 5em 0;
 }
 
 @media (max-width: 480px) {
@@ -71,7 +74,48 @@ nav ul li a:hover {
     nav ul.active li {
         display: block;
     }
-    nav ul.active li a {
+    nav ul.active li .alink {
         display: block;
     }
+    .n1 {
+        margin: 0;
+    }
+}
+
+
+.car {
+    margin: 1em 0 0 0;
+}
+
+
+
+html{
+    /* scroll-behavior: smooth; */
+}
+a.top, a.bottom {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-weight: 100;
+    position: absolute;
+    font-size: 24px;
+}
+.sky {
+    background: linear-gradient(to bottom, #64b3f4, #f3f705);
+    height: 6000px;
+    position: relative;
+}
+a.top {
+    bottom: 0;
+}
+a.bottom {
+    margin: 2em 0 0 0;
+}
+
+video {
+    position: fixed;
+    left: 40;
+    top: 50;
+    width: 50%;
+    height: 50%;
 }
