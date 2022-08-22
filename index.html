@@ -12,12 +12,15 @@
 </head>
 
 <body>
-    <nav>
+    <main class="sky" id="top">
+        <a href="#bottom" class="bottom">bottom</a>
+
+    <nav class="n1">
         <ul id="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="" class="alink">Home</a></li>
+            <li><a href="" class="alink">About</a></li>
+            <li><a href="" class="alink">Features</a></li>
+            <li><a href="" class="alink">Contact</a></li>
         </ul>
         <div class="mobile-bar" onclick="toggleMobileMenu()">
             <span></span>
@@ -25,14 +28,21 @@
             <span></span>
         </div>
     </nav>
+    
+    
+    
+        <input list="cars" class="car">
+        <datalist id="cars">
+            <option value="BMW"></option>
+            <option value="Mersedes"></option>
+            <option value="Audi"></option>
+            <option value="Toyota"></option>
+        </datalist>
 
-    <input list="cars">
-    <datalist id="cars">
-        <option value="BMW"></option>
-        <option value="Mersedes"></option>
-        <option value="Audi"></option>
-        <option value="Toyota"></option>
-    </datalist>
+    
+        <a href="#top" class="top">top</a>
+    </main>
+    <div id="bottom"></div>
 
     <script src="script.js"></script>
 </body>
